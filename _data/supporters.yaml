@@ -1,5 +1,5 @@
 - name: "Operations och Intensivvårdsfonden"
-  image: "images/supporters/operationsochintensivvardsfonden.png"
+  image: "images/supporters/operations.png"
   url: "https://operationsochintensivvardsfonden.se/utdelningar/"
 
 - name: "Karolinska Institutet"
@@ -25,3 +25,8 @@
 - name: "Olof Norlander Memory Foundation"
   image: "images/supporters/olof_norlander.png"
   url: "https://ki.se/en/fyfa/about-fyfa/the-olof-norlander-lecture"
+
+- name: "Accelerate Science Cambridge"
+  image: "images/supporters/accelerate.png"
+  url: "https://science.ai.cam.ac.uk/"
+
