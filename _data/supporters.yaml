@@ -11,7 +11,7 @@
 - name: "Södersjukhuset"
   image: "images/supporters/sos.png"
   url: "https://www.sodersjukhuset.se"
-  order: 3
+  order: 1
 
 - name: "Digital Futures KTH"
   image: "images/supporters/digital.jpg"
@@ -34,4 +34,4 @@
 - name: "Accelerate Science Cambridge"
   image: "images/supporters/accelerate.png"
   url: "https://science.ai.cam.ac.uk/"
-  order: 2
+  order: 1
