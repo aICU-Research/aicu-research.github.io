@@ -36,14 +36,18 @@ title: aICU
 <div class="team-grid" id="supporters-grid">
   {% for supporter in site.data.supporters %}
   <div class="card-small contain" data-order="{{ supporter.order | default: 9999 }}">
+    {% if supporter.url %}
     <a href="{{ supporter.url }}" target="_blank" rel="noopener noreferrer">
+    {% endif %}
       <div class="img-box">
         <img src="{{ supporter.image }}" alt="{{ supporter.name }}">
       </div>
       <div class="card-content">
         <h3>{{ supporter.name }}</h3>
       </div>
+    {% if supporter.url %}
     </a>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
@@ -55,12 +59,18 @@ title: aICU
 <div class="team-grid" id="team-grid">
   {% for person in site.data.team %}
   <div class="card-small cover" data-order="{{ person.order | default: 9999 }}">
-    <div class="img-box">
-      <img src="{{ person.image }}" alt="{{ person.name }}">
-    </div>
-    <div class="card-content">
-      <h3>{{ person.name }}</h3>
-    </div>
+    {% if person.url %}
+    <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">
+    {% endif %}
+      <div class="img-box">
+        <img src="{{ person.image }}" alt="{{ person.name }}">
+      </div>
+      <div class="card-content">
+        <h3>{{ person.name }}</h3>
+      </div>
+    {% if person.url %}
+    </a>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
