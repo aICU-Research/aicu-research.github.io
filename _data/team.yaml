@@ -1,23 +1,23 @@
 - name: "Villiam"
   full_name: "Villiam Kildal"
-  image: "images/villiam.jpg"
+  image: "images/people/villiam.jpg"
 
 - name: "Christian"
   full_name: "Christian Cabrera"
-  image: "images/christian.jpg"
+  image: "images/people/christian.jpg"
 
 - name: "Diana"
   full_name: "Diana Robinson"
-  image: "images/diana.jpg"
+  image: "images/people/diana.jpg"
 
 - name: "Radzim"
   full_name: "Radzim Sendyka"
-  image: "images/radzim.jpg"
+  image: "images/people/radzim.jpg"
 
 - name: "Akshaya"
   full_name: "Akshaya Thippur"
-  image: "images/akshaya.jpg"
+  image: "images/people/akshaya.jpg"
 
 - name: "Malin"
   full_name: "Malin Albert"
-  image: "images/malin.jpg"
+  image: "images/people/malin.jpg"
