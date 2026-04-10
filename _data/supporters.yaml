@@ -1,0 +1,27 @@
+- name: "Operations och Intensivvårdsfonden"
+  image: "images/supporters/operationsochintensivvardsfonden.png"
+  url: "https://operationsochintensivvardsfonden.se/utdelningar/"
+
+- name: "Karolinska Institutet"
+  image: "images/supporters/ki.png"
+  url: "https://ki.se"
+
+- name: "Södersjukhuset"
+  image: "images/supporters/sodersjukhuset.png"
+  url: "https://www.sodersjukhuset.se"
+
+- name: "Digital Futures KTH"
+  image: "images/supporters/digital_futures.png"
+  url: "https://www.digitalfutures.kth.se"
+
+- name: "Hirsch Fellowship"
+  image: "images/supporters/hirsch_fellowship.png"
+  url: "https://medarbetare.ki.se/forskarstod/forskningsfinansiering/ki-forskningsbidrag-och-priser/hirsch-fellowship-varen"
+
+- name: "Lars Hiertas Minne"
+  image: "images/supporters/lars_hiertas_minne.png"
+  url: "https://www.larshiertasminne.se/sv/"
+
+- name: "Olof Norlander Memory Foundation"
+  image: "images/supporters/olof_norlander.png"
+  url: "https://ki.se/en/fyfa/about-fyfa/the-olof-norlander-lecture"

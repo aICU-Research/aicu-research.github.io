@@ -1,24 +1,19 @@
-- name: "Villiam"
-  full_name: "Villiam Kildal"
+- name: "Villiam Kildal"
   image: "images/people/villiam.jpg"
+  url: "https://ki.se/en/people/villiam-vejbrink-kildal"
   order: 1
 
-- name: "Christian"
-  full_name: "Christian Cabrera"
+- name: "Christian Cabrera"
   image: "images/people/christian.jpg"
 
-- name: "Diana"
-  full_name: "Diana Robinson"
+- name: "Diana Robinson"
   image: "images/people/diana.jpg"
 
-- name: "Radzim"
-  full_name: "Radzim Sendyka"
+- name: "Radzim Sendyka"
   image: "images/people/radzim.jpg"
 
-- name: "Akshaya"
-  full_name: "Akshaya Thippur"
+- name: "Akshaya Thippur"
   image: "images/people/akshaya.jpg"
 
-- name: "Malin"
-  full_name: "Malin Albert"
+- name: "Malin Albert"
   image: "images/people/malin.jpg"
