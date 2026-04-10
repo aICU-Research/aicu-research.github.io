@@ -1,6 +1,7 @@
 - name: "Villiam"
   full_name: "Villiam Kildal"
   image: "images/people/villiam.jpg"
+  order: 1
 
 - name: "Christian"
   full_name: "Christian Cabrera"
