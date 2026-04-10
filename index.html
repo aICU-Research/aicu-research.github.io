@@ -33,7 +33,7 @@ title: aICU
 
 <div class="team-grid" id="supporters-grid">
   {% for supporter in site.data.supporters %}
-  <div class="card-small" data-order="{{ supporter.order | default: 9999 }}">
+  <div class="card-small contain" data-order="{{ supporter.order | default: 9999 }}">
     <a href="{{ supporter.url }}" target="_blank" rel="noopener noreferrer">
       <img src="{{ supporter.image }}" alt="{{ supporter.name }}">
       <div class="card-content">
