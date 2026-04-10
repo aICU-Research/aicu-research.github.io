@@ -6,27 +6,17 @@ title: aICU
 <h2>News</h2>
 
 <div class="news-grid">
-
+  {% for item in site.data.news %}
   <div class="card">
-    <a href="https://science.ai.cam.ac.uk/2026/02/19/how-can-we-use-ai-to-support-clinical-decision-making-in-intensive-care" target="_blank" rel="noopener noreferrer">
-      <img src="images/news_1.png">
+    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ item.image }}" alt="{{ item.title }}">
       <div class="card-content">
-        <h3>How can we use AI to support clinical decision-making in intensive care?</h3>
-        <div class="meta">19 February 2026 - Accelerate Science, University of Cambridge</div>
+        <h3>{{ item.title }}</h3>
+        <div class="meta">{{ item.date }} - {{ item.source }}</div>
       </div>
     </a>
   </div>
-
-  <div class="card">
-    <a href="https://www.sodersjukhuset.se/nyheter/2025/12/battre-beslutsunderlag-for-intensivvarden-med-ai-stod/" target="_blank" rel="noopener noreferrer">
-      <img src="images/news_2.png">
-      <div class="card-content">
-        <h3>Better decision-making for intensive care with AI support</h3>
-        <div class="meta">December 2025 - Södersjukhuset</div>
-      </div>
-    </a>
-  </div>
-
+  {% endfor %}
 </div>
 
 <br><br>
@@ -34,37 +24,14 @@ title: aICU
 <h2>Team</h2>
 
 <div class="team-grid" id="team-grid">
-
+  {% for person in site.data.team %}
   <div class="card-small">
-    <img src="images/person.png" alt="Villiam Kildal">
-    <div class="card-content"><h3>Villiam</h3></div>
+    <img src="{{ person.image }}" alt="{{ person.full_name }}">
+    <div class="card-content">
+      <h3>{{ person.name }}</h3>
+    </div>
   </div>
-
-  <div class="card-small">
-    <img src="images/person.png" alt="Christian Cabrera">
-    <div class="card-content"><h3>Christian</h3></div>
-  </div>
-
-  <div class="card-small">
-    <img src="images/person.png" alt="Diana Robinson">
-    <div class="card-content"><h3>Diana</h3></div>
-  </div>
-
-  <div class="card-small">
-    <img src="images/person.png" alt="Radzim Sendyka">
-    <div class="card-content"><h3>Radzim</h3></div>
-  </div>
-
-  <div class="card-small">
-    <img src="images/person.png" alt="Akshaya Thippur">
-    <div class="card-content"><h3>Akshaya</h3></div>
-  </div>
-
-  <div class="card-small">
-    <img src="images/person.png" alt="Malin Albert">
-    <div class="card-content"><h3>Malin</h3></div>
-  </div>
-
+  {% endfor %}
 </div>
 
 <script>
