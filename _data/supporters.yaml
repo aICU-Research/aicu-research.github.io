@@ -1,18 +1,22 @@
 - name: "Operations och Intensivvårdsfonden"
   image: "images/supporters/operations.png"
   url: "https://operationsochintensivvardsfonden.se/utdelningar/"
+  order: 5
 
 - name: "Karolinska Institutet"
   image: "images/supporters/ki.png"
   url: "https://ki.se"
+  order: 1
 
 - name: "Södersjukhuset"
   image: "images/supporters/sos.png"
   url: "https://www.sodersjukhuset.se"
+  order: 3
 
 - name: "Digital Futures KTH"
   image: "images/supporters/digital.jpg"
   url: "https://www.digitalfutures.kth.se"
+  order: 5
 
 - name: "Hirsch Fellowship"
   image: "images/supporters/ki.png"
@@ -21,6 +25,7 @@
 - name: "Lars Hiertas Minne Foundation"
   image: "images/supporters/lars.jpg"
   url: "https://www.larshiertasminne.se/sv/"
+  order: 5
 
 - name: "Olof Norlander Memory Foundation"
   image: "images/supporters/ki.png"
@@ -29,3 +34,4 @@
 - name: "Accelerate Science Cambridge"
   image: "images/supporters/accelerate.png"
   url: "https://science.ai.cam.ac.uk/"
+  order: 2
