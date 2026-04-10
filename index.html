@@ -35,7 +35,9 @@ title: aICU
   {% for supporter in site.data.supporters %}
   <div class="card-small contain" data-order="{{ supporter.order | default: 9999 }}">
     <a href="{{ supporter.url }}" target="_blank" rel="noopener noreferrer">
-      <img src="{{ supporter.image }}" alt="{{ supporter.name }}">
+      <div class="img-box">
+        <img src="{{ supporter.image }}" alt="{{ supporter.name }}">
+      </div>
       <div class="card-content">
         <h3>{{ supporter.name }}</h3>
       </div>
@@ -50,8 +52,10 @@ title: aICU
 
 <div class="team-grid" id="team-grid">
   {% for person in site.data.team %}
-  <div class="card-small" data-order="{{ person.order | default: 9999 }}">
-    <img src="{{ person.image }}" alt="{{ person.name }}">
+  <div class="card-small cover" data-order="{{ person.order | default: 9999 }}">
+    <div class="img-box">
+      <img src="{{ person.image }}" alt="{{ person.name }}">
+    </div>
     <div class="card-content">
       <h3>{{ person.name }}</h3>
     </div>

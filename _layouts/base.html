@@ -159,40 +159,42 @@
       border-radius: 10px;
       overflow: hidden;
       width: 160px;
-      aspect-ratio: 0.7 / 1;
       display: flex;
       flex-direction: column;
       font-size: 0.8em;
+      background: white;
     }
 
-    .card-small img {
-      width: 100%;
-      height: 70%;
+    .card-small a {
+      text-decoration: none;
+      color: black;
       display: block;
     }
 
-    /* default: zoom/crop */
-    .card-small.cover img {
+    .img-box {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: white;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .card-small.cover .img-box img {
       object-fit: cover;
     }
 
-    /* optional: show full image */
-    .card-small.contain {
-      background: white;
-    }
-
-    .card-small.contain img {
+    .card-small.contain .img-box img {
       object-fit: contain;
-      background: white;
     }
 
     .card-small .card-content {
-      height: 30%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
       padding: 0.4em;
+      text-align: center;
     }
 
     .card a,
