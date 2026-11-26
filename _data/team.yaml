@@ -7,7 +7,7 @@
   role: Associate Professor, University of Cambridge
   image: images/people/christian.jpg
   url: https://ki.se/en/people/christian-cabrerajojoa
-  order: 2
+  order: 3
 - name: Diana Robinson
   role: Postdoctoral Researcher, Karolinska Institutet & ETH Zurich
   image: images/people/diana.jpg
@@ -17,49 +17,49 @@
   role: Doctoral Student, University of Cambridge
   image: images/people/radzim.jpg
   url: https://ki.se/en/people/radzim-sendyka
-  order: 4
+  order: 3
 - name: Akshaya Thippur Sridatta
   role: Research Engineer, Karolinska Institutet
   image: images/people/akshaya.jpg
   url: https://ki.se/en/people/akshaya-thippur-sridatta
-  order: 5
+  order: 3
 - name: Malin Albert
   role: Postdoctoral Researcher, Karolinska Institutet
   image: images/people/malin.jpg
   url: https://ki.se/en/people/malin-albert
-  order: 6
+  order: 2
 - name: Carl Henrik Ek
   role: Professor, University of Cambridge
   image: images/people/carl-henrik-ek.jpg
   url: https://ki.se/en/people/carl-henrik-ek
-  order: 7
+  order: 5
 - name: Fleur Conway
   role: Doctoral Student, University of Edinburgh
   image: images/people/fleur-conway.jpg
   url: https://ki.se/en/people/fleur-conway
-  order: 8
+  order: 3
 - name: Albin Åberg Dahlberg
   role: Research Engineer, Karolinska Institutet
   image: images/people/albin-aberg-dahlberg.jpg
   url: https://ki.se/en/people/albin-aberg-dahlberg
-  order: 9
+  order: 3
 - name: Matilda Lindén
   role: Affiliated to research
   image: images/people/person.png
   url: https://ki.se/en/people/matilda-linden
-  order: 10
+  order: 4
 - name: Kajsa Svensson
   role: Affiliated to research
   image: images/people/person.png
   url: https://ki.se/en/people/kajsa-svensson
-  order: 11
+  order: 4
 - name: Alice Löwing Jensen
   role: Affiliated to research
   image: images/people/person.png
   url: https://ki.se/en/people/alice-lowing-jensen
-  order: 12
+  order: 4
 - name: Xiangjian Jiang
   role: Doctoral Student, University of Cambridge
   image: images/people/person.png
   url: https://ki.se/en/people/xiangjian-jiang
-  order: 13
+  order: 4
