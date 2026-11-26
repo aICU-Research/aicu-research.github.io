@@ -4,4 +4,4 @@ A Jekyll site for GitHub Pages. The activity collection powers both the homepage
 
 # TODO
 
-Add a contact
+Add a contact us / get in touch point
