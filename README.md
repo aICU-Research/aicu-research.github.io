@@ -125,3 +125,4 @@ Credit to Akshaya for the original design
 ## TODO
 
 - Add a Contact Us / Get in Touch section.
+- Remove year filtering
