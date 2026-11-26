@@ -7,3 +7,7 @@
 - Lots of news, award
 - milestones: ethics approval, server
 - later: papers
+- photos
+- team
+
+# TODO: slack
