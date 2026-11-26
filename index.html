@@ -2,92 +2,14 @@
 layout: base
 title: aICU
 ---
-
-<div class="about">
-  {% if site.data.about.intro.title %}
-    <h2>{{ site.data.about.intro.title }}</h2>
-  {% endif %}
-
+<section class="about">
+  {% if site.data.about.intro.title %}<h2>{{ site.data.about.intro.title }}</h2>{% endif %}
   <p>{{ site.data.about.intro.text }}</p>
-</div>
-
-<br><br>
-
-<h2>News</h2>
-
-<div class="news-grid">
-  {% for item in site.data.news %}
-  <div class="card">
-    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
-      <img src="{{ item.image }}" alt="{{ item.title }}">
-      <div class="card-content">
-        <h3>{{ item.title }}</h3>
-        <div class="meta">{{ item.date }} - {{ item.source }}</div>
-      </div>
-    </a>
-  </div>
-  {% endfor %}
-</div>
-
-<br><br>
-
-<h2>Supporters</h2>
-
-<div class="team-grid" id="supporters-grid">
-  {% for supporter in site.data.supporters %}
-  <div class="card-small contain" data-order="{{ supporter.order | default: 9999 }}">
-    {% if supporter.url %}
-    <a href="{{ supporter.url }}" target="_blank" rel="noopener noreferrer">
-    {% endif %}
-      <div class="img-box">
-        <img src="{{ supporter.image }}" alt="{{ supporter.name }}">
-      </div>
-      <div class="card-content">
-        <h3>{{ supporter.name }}</h3>
-      </div>
-    {% if supporter.url %}
-    </a>
-    {% endif %}
-  </div>
-  {% endfor %}
-</div>
-
-<br><br>
-
-<h2>Team</h2>
-
-<div class="team-grid" id="team-grid">
-  {% for person in site.data.team %}
-  <div class="card-small cover" data-order="{{ person.order | default: 9999 }}">
-    {% if person.url %}
-    <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">
-    {% endif %}
-      <div class="img-box">
-        <img src="{{ person.image }}" alt="{{ person.name }}">
-      </div>
-      <div class="card-content">
-        <h3>{{ person.name }}</h3>
-      </div>
-    {% if person.url %}
-    </a>
-    {% endif %}
-  </div>
-  {% endfor %}
-</div>
-
-<script>
-  function shuffleGrid(gridId) {
-    const grid = document.getElementById(gridId);
-
-    const items = Array.from(grid.children).map(item => ({
-      el: item,
-      key: Number(item.dataset.order || 9999) + Math.random() / 1000
-    }));
-
-    items.sort((a, b) => a.key - b.key);
-    items.forEach(({ el }) => grid.appendChild(el));
-  }
-
-  shuffleGrid('supporters-grid');
-  shuffleGrid('team-grid');
-</script>
+</section>
+<section>
+  <h2>Latest activity</h2>
+  {% include activity-grid.html limit=site.homepage_activity_limit %}
+  <p class="center"><a href="{{ '/activity/' | relative_url }}">View all activity</a></p>
+</section>
+<section><h2>Supporters</h2>{% include supporters.html %}</section>
+<section><h2>Team</h2>{% include team.html %}</section>

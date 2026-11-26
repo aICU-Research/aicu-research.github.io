@@ -1,0 +1,15 @@
+news:
+  label: News
+  color: "#415DDA"
+event:
+  label: Event
+  color: "#287D68"
+milestone:
+  label: Milestone
+  color: "#4F0433"
+publication:
+  label: Publication
+  color: "#8054A3"
+presentation:
+  label: Presentation
+  color: "#A45B16"

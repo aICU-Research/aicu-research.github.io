@@ -1,1 +1,25 @@
 theme: null
+title: aICU
+url: https://aicu-research.github.io
+baseurl: ""
+future: true
+homepage_activity_limit: 3
+collections:
+  activity:
+    output: true
+    permalink: /activity/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: activity
+    values:
+      layout: activity-single
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .idea

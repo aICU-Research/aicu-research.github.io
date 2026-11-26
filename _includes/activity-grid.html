@@ -1,0 +1,8 @@
+{% assign activities = site.activity | sort: 'date' | reverse %}
+<div class="news-grid" {% if include.archive %}id="activity-grid"{% endif %}>
+  {% if include.limit %}
+    {% for activity in activities limit:include.limit %}{% include activity-card.html item=activity %}{% endfor %}
+  {% else %}
+    {% for activity in activities %}{% include activity-card.html item=activity %}{% endfor %}
+  {% endif %}
+</div>
