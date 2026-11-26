@@ -5,7 +5,7 @@ layout: base
 <article class="article">
   <a href="{{ '/activity/' | relative_url }}">← All activity</a>
   <h1>{{ page.title | escape }}</h1>
-  <span class="activity-type" style="--type-color:{{ kind.color | default: '#415DDA' }}">{{ kind.label | default: page.type | escape }}</span>
+  <span class="activity-type" style="--type-color:{{ kind.color | default: '#4F0433' }}">{{ kind.label | default: page.type | escape }}</span>
   <p class="meta">{% include activity-date.html item=page %}{% if page.source %} · {{ page.source | escape }}{% endif %}</p>
   {% if page.image %}<img class="article-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}">{% endif %}
   {% if page.summary %}<p>{{ page.summary | escape }}</p>{% endif %}

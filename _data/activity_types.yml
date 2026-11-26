@@ -1,6 +1,6 @@
 news:
   label: News
-  color: "#415DDA"
+  color: "#4F0433"
 event:
   label: Event
   color: "#287D68"
@@ -13,3 +13,9 @@ publication:
 presentation:
   label: Presentation
   color: "#A45B16"
+award:
+  label: Award
+  color: "#4F0433"
+blogpost:
+  label: Blogpost
+  color: "#287D68"
