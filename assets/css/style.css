@@ -248,7 +248,7 @@ main a:not(.card a):not(.card-small a) { color: #4F0433; }
 
 /* aICU brand */
 :root { --brand-primary: #4F0433; --brand-accent: #8EE8D8; }
-header { background: white; border-bottom: 2px solid var(--brand-accent); }
+header { background: white; border-bottom: 2px solid var(--brand-primary); }
 .header-logo { height: 58px; width: auto; }
 .site-nav a { color: var(--brand-primary); padding: .45rem .65rem; border-radius: 6px; }
 .site-nav a:focus-visible { outline: 2px solid var(--brand-primary); outline-offset: 2px; }
