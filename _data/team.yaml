@@ -1,45 +1,45 @@
 - name: Villiam V. Kildal
-  role: Principal Investigator
+  role: Principal Investigator, Karolinska Institutet
   image: images/people/villiam.jpg
   url: https://ki.se/en/people/villiam-vejbrink-kildal
   order: 1
 - name: Christian Cabrera-Jojoa
-  role: Visiting researcher, Associate Professor, University of Cambridge
+  role: Associate Professor, University of Cambridge
   image: images/people/christian.jpg
   url: https://ki.se/en/people/christian-cabrerajojoa
   order: 2
 - name: Diana Robinson
-  role: Postdoctoral researcher
+  role: Postdoctoral Researcher, Karolinska Institutet & ETH Zurich
   image: images/people/diana.jpg
   url: https://ki.se/en/people/diana-robinson
   order: 3
 - name: Radzim Sendyka
-  role: Visiting researcher, doctoral student, University of Cambridge
+  role: Doctoral Student, University of Cambridge
   image: images/people/radzim.jpg
   url: https://ki.se/en/people/radzim-sendyka
   order: 4
 - name: Akshaya Thippur Sridatta
-  role: Research engineer
+  role: Research Engineer, Karolinska Institutet
   image: images/people/akshaya.jpg
   url: https://ki.se/en/people/akshaya-thippur-sridatta
   order: 5
 - name: Malin Albert
-  role: Postdoctoral researcher
+  role: Postdoctoral Researcher, Karolinska Institutet
   image: images/people/malin.jpg
   url: https://ki.se/en/people/malin-albert
   order: 6
 - name: Carl Henrik Ek
-  role: Visiting Professor
+  role: Professor, University of Cambridge
   image: images/people/carl-henrik-ek.jpg
   url: https://ki.se/en/people/carl-henrik-ek
   order: 7
 - name: Fleur Conway
-  role: Visiting researcher, doctoral student, University of Edinburgh
+  role: Doctoral Student, University of Edinburgh
   image: images/people/fleur-conway.jpg
   url: https://ki.se/en/people/fleur-conway
   order: 8
 - name: Albin Åberg Dahlberg
-  role: Research engineer
+  role: Research Engineer, Karolinska Institutet
   image: images/people/albin-aberg-dahlberg.jpg
   url: https://ki.se/en/people/albin-aberg-dahlberg
   order: 9
@@ -59,7 +59,7 @@
   url: https://ki.se/en/people/alice-lowing-jensen
   order: 12
 - name: Xiangjian Jiang
-  role: Visiting researcher, doctoral student, University of Cambridge
+  role: Doctoral Student, University of Cambridge
   image: images/people/person.png
   url: https://ki.se/en/people/xiangjian-jiang
   order: 13
