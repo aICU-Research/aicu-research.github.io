@@ -4,3 +4,5 @@ date: '2025-12-09'
 type: presentation
 image: /images/activity/ai-for-science-summit-2025.jpg
 ---
+
+A presentation on aICU at the AI for Science Summit.

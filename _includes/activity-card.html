@@ -2,7 +2,7 @@
 {% assign kind = site.data.activity_types[item.type] %}
 {% assign label = kind.label | default: item.type | capitalize %}
 <article class="card" data-activity-type="{{ item.type | escape }}" data-activity-year="{{ item.date | date: '%Y' }}">
-  <a href="{% if item.link_to %}{{ item.link_to | escape }}{% else %}{{ item.url | relative_url }}{% endif %}">
+  <a href="{{ item.url | relative_url }}">
     {% if item.image %}<img src="{{ item.image | relative_url }}" alt="{{ item.image_alt | default: '' | escape }}" loading="lazy">{% else %}<div class="activity-placeholder" aria-hidden="true">{{ label | escape }}</div>{% endif %}
     <div class="card-content">
       <span class="activity-type" style="--type-color:{{ kind.color | default: '#4F0433' }}">{{ label | escape }}</span>

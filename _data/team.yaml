@@ -1,65 +1,186 @@
 - name: Villiam V. Kildal
-  role: Principal Investigator, Karolinska Institutet
+  role: Principal investigator
   image: images/people/villiam.jpg
   url: https://ki.se/en/people/villiam-vejbrink-kildal
   order: 1
-- name: Christian Cabrera-Jojoa
-  role: Associate Professor, University of Cambridge
-  image: images/people/christian.jpg
-  url: https://ki.se/en/people/christian-cabrerajojoa
-  order: 3
-- name: Diana Robinson
-  role: Postdoctoral Researcher, Karolinska Institutet & ETH Zurich
-  image: images/people/diana.jpg
-  url: https://ki.se/en/people/diana-robinson
-  order: 3
-- name: Radzim Sendyka
-  role: Doctoral Student, University of Cambridge
-  image: images/people/radzim.jpg
-  url: https://ki.se/en/people/radzim-sendyka
-  order: 3
-- name: Akshaya Thippur Sridatta
-  role: Research Engineer, Karolinska Institutet
-  image: images/people/akshaya.jpg
-  url: https://ki.se/en/people/akshaya-thippur-sridatta
-  order: 3
+  homepage_order: 1
+  institution: ki
 - name: Malin Albert
-  role: Postdoctoral Researcher, Karolinska Institutet
+  role: Postdoc
   image: images/people/malin.jpg
   url: https://ki.se/en/people/malin-albert
   order: 2
-- name: Carl Henrik Ek
-  role: Professor, University of Cambridge
-  image: images/people/carl-henrik-ek.jpg
-  url: https://ki.se/en/people/carl-henrik-ek
-  order: 5
-- name: Fleur Conway
-  role: Doctoral Student, University of Edinburgh
-  image: images/people/fleur-conway.jpg
-  url: https://ki.se/en/people/fleur-conway
-  order: 3
-- name: Albin Åberg Dahlberg
-  role: Research Engineer, Karolinska Institutet
+  institution: ki
+  homepage_order: 2
+- name: Albin Å. Dahlberg
+  role: Engineer, precision medicine
   image: images/people/albin-aberg-dahlberg.jpg
   url: https://ki.se/en/people/albin-aberg-dahlberg
   order: 3
-- name: Matilda Lindén
-  role: Affiliated to research
-  image: images/people/person.png
-  url: https://ki.se/en/people/matilda-linden
+  institution: ki
+  homepage_order: 3
+- name: Diana Robinson
+  role: Postdoc (joint ETH)
+  image: images/people/diana.jpg
+  url: https://ki.se/en/people/diana-robinson
   order: 4
+  institution: ki
+  homepage_order: 3
 - name: Kajsa Svensson
-  role: Affiliated to research
-  image: images/people/person.png
+  role: Medical student
+  image: images/people/kajsa-svensson.jpg
   url: https://ki.se/en/people/kajsa-svensson
-  order: 4
+  order: 5
+  institution: ki
+  homepage_order: 4
+- name: Anna Schandl
+  role: Associate professor
+  image: images/people/anna-schandl.jpg
+  institution: ki
+  order: 6
+  homepage_order: 4
+- name: Akshaya Thippur
+  role: Research engineer
+  image: images/people/akshaya.jpg
+  url: https://ki.se/en/people/akshaya-thippur-sridatta
+  order: 7
+  institution: ki
+  homepage_order: 3
 - name: Alice Löwing Jensen
-  role: Affiliated to research
-  image: images/people/person.png
+  role: Specialist ICU doctor
+  image: images/people/alice-lowing-jensen.jpg
   url: https://ki.se/en/people/alice-lowing-jensen
+  order: 8
+  institution: ki
+  homepage_order: 4
+- name: Sofia Kühner
+  role: Resident ICU doctor
+  image: images/people/sofia-kuhner.jpg
+  institution: ki
+  order: 9
+  homepage_order: 4
+- name: Eva Joelsson Alm
+  role: Associate professor
+  image: images/people/eva-joelsson-alm.jpg
+  institution: ki
+  order: 10
+  homepage_order: 4
+- name: Matilda Lindén
+  role: Junior doctor (intern)
+  image: images/people/matilda-linden.jpg
+  url: https://ki.se/en/people/matilda-linden
+  order: 11
+  institution: ki
+  homepage_order: 4
+- name: Alexis Milton
+  role: Specialist ICU doctor
+  image: images/people/alexis-milton.jpg
+  institution: ki
+  order: 12
+  homepage_order: 4
+- name: Mattias Günther
+  role: Associate professor
+  image: images/people/mattias-gunther.jpg
+  institution: ki
+  order: 13
+  homepage_order: 4
+- name: Jacob Hollenberg
+  role: Professor
+  image: images/people/jacob-hollenberg.jpg
+  institution: ki
+  order: 14
+  homepage_order: 4
+- name: Radzim Sendyka
+  role: PhD student
+  image: images/people/radzim.jpg
+  url: https://ki.se/en/people/radzim-sendyka
+  order: 1
+  institution: cambridge
+  homepage_order: 3
+- name: Christian Cabrera Jojoa
+  role: Associate professor
+  image: images/people/christian.jpg
+  url: https://ki.se/en/people/christian-cabrerajojoa
+  order: 2
+  institution: cambridge
+  homepage_order: 3
+- name: Neil Lawrence
+  role: Professor
+  image: images/people/neil-lawrence.jpg
+  institution: cambridge
+  order: 3
+  homepage_order: 9
+- name: Carl Henrik Ek
+  role: Professor
+  image: images/people/carl-henrik-ek.jpg
+  url: https://ki.se/en/people/carl-henrik-ek
   order: 4
-- name: Xiangjian Jiang
-  role: Doctoral Student, University of Cambridge
-  image: images/people/person.png
-  url: https://ki.se/en/people/xiangjian-jiang
-  order: 4
+  institution: cambridge
+  homepage_order: 9
+- name: Fleur Conway
+  role: PhD student
+  image: images/people/fleur-conway.jpg
+  url: https://ki.se/en/people/fleur-conway
+  order: 1
+  institution: edinburgh
+  homepage_order: 3
+- name: Ajitha Rajan
+  role: Professor
+  image: images/people/ajitha-rajan.jpg
+  institution: edinburgh
+  order: 2
+  homepage_order: 7
+- name: Frauke Zeller
+  role: Professor
+  image: images/people/frauke-zeller.jpg
+  institution: edinburgh
+  order: 3
+  homepage_order: 7
+- name: Menna El-Assady
+  role: Associate professor
+  image: images/people/menna-el-assady.jpg
+  institution: eth
+  order: 1
+  homepage_order: 5
+- name: Gunnar Rätsch
+  role: Professor
+  image: images/people/gunnar-ratsch.jpg
+  institution: eth
+  order: 2
+  homepage_order: 5
+- name: Bernd Stadlinger
+  role: Professor
+  image: images/people/bernd-stadlinger.jpg
+  institution: eth
+  order: 3
+  homepage_order: 5
+- name: Kevin Smith
+  role: Professor
+  image: images/people/kevin-smith.jpg
+  institution: kth
+  order: 1
+  homepage_order: 6
+- name: Martin Trapp
+  role: Associate professor
+  image: images/people/martin-trapp.jpg
+  institution: kth
+  order: 2
+  homepage_order: 6
+- name: Henrik Boström
+  role: Professor
+  image: images/people/henrik-bostrom.jpg
+  institution: kth
+  order: 3
+  homepage_order: 6
+- name: Ellen Loman
+  role: Master’s student
+  image: images/people/ellen-loman.jpg
+  institution: eindhoven
+  order: 1
+  homepage_order: 3
+- name: Federica Eduati
+  role: Associate professor (main master's supervisor)
+  image: images/people/federica-eduati.jpg
+  institution: eindhoven
+  order: 2
+  homepage_order: 8

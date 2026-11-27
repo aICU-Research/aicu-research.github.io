@@ -1,6 +1,7 @@
 <div class="team-grid" id="team-grid">
   {% for person in site.data.team %}
-  <div class="card-small cover" data-order="{{ person.order | default: 9999 }}">
+  {% assign university = site.data.universities | where: 'id', person.institution | first %}
+  <div class="card-small cover" data-order="{{ person.homepage_order | default: 2 }}">
     {% if person.url %}
     <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">
     {% endif %}
@@ -10,6 +11,7 @@
       <div class="card-content">
         <h3>{{ person.name | escape }}</h3>
         {% if person.role %}<p class="team-role">{{ person.role | escape }}</p>{% endif %}
+        {% if university %}<p class="team-affiliation">{{ university.name | escape }}</p>{% endif %}
       </div>
     {% if person.url %}
     </a>

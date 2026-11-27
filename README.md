@@ -68,13 +68,25 @@ Optional properties:
 - `image`: Path to the activity photograph.
 - `image_alt`: Alternative text describing the photograph.
 - `source`: Name of the original source or organisation.
-- `link_to`: External URL that the activity card should open.
+- `link_to`: External source link displayed at the end of the activity page.
 - `summary`: Short description displayed on the card.
 - `end_date`: End date for multi-day activities.
 - `date_label`: Custom displayed date, e.g. "Early 2025 (TBD)".
 - `date_precision`: Set to `month` or `year` for approximate dates.
 
-Activities are automatically sorted by date, newest first. If `link_to` is omitted, the card opens the local activity article.
+Activities are automatically sorted by date, newest first. Every card opens its local activity page. The optional `link_to` provides a link to the original source there.
+
+### Writing activity content and adding photographs
+
+Edit the Markdown text below the closing `---` in the activity file. Use normal Markdown for paragraphs, headings, links and lists. The `image` field automatically displays the cover photograph on both the card and the article, so do not repeat it in the body.
+
+To add a second or third photograph, upload it to `images/activity/` and insert a Markdown image wherever it should appear in the article:
+
+```markdown
+![Workshop photograph]({{ "/images/activity/cambridge-workshop-2026-2.jpg" | relative_url }})
+```
+
+You can also use a plain root-relative path, e.g. `![Workshop photograph](/images/activity/example.jpg)`. No layout changes are needed.
 
 ### Activity categories
 
@@ -126,3 +138,11 @@ Credit to Akshaya for the original design
 
 - Add a Contact Us / Get in Touch section.
 - Remove year filtering
+
+### University-grouped team page
+
+Edit `_data/team.yaml` to add or update a person. Each person's `institution` must match an `id` in `_data/universities.yml`. Their `order` controls their position within that institution on the Team page. Update university names, subtitles and logo paths in `_data/universities.yml`. Logos are stored in `images/universities/`; portraits in `images/people/`. The country count is set in `_includes/team-institutions.html`.
+
+### Homepage team order
+
+The homepage uses a single grid and displays each member's university from `institution` in `_data/team.yaml`. The optional `homepage_order` field controls homepage priority (default 2); equal values are randomised. The separate Team page uses `order` within each university.

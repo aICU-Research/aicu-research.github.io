@@ -1,0 +1,30 @@
+- id: ki
+  name: Karolinska Institutet
+  subtitle: Clinical Science and Education · Sweden
+  logo: images/universities/ki.png
+  country: Sweden
+- id: cambridge
+  name: University of Cambridge
+  subtitle: Department of Computer Science & Technology · United Kingdom
+  logo: images/universities/cambridge.png
+  country: United Kingdom
+- id: edinburgh
+  name: University of Edinburgh
+  subtitle: School of Informatics · United Kingdom
+  logo: images/universities/edinburgh.png
+  country: United Kingdom
+- id: eth
+  name: ETH Zürich
+  subtitle: ETH AI Center · Switzerland
+  logo: images/universities/eth.png
+  country: Switzerland
+- id: kth
+  name: KTH Royal Institute of Technology
+  subtitle: Stockholm · Sweden
+  logo: images/universities/kth.png
+  country: Sweden
+- id: eindhoven
+  name: Eindhoven University of Technology
+  subtitle: Eindhoven · Netherlands
+  logo: images/universities/eindhoven.png
+  country: Netherlands

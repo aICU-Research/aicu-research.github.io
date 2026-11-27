@@ -8,7 +8,11 @@ type: milestone
 # image_alt: Description of image
 # source: Organisation
 # link_to: https://example.com
-# summary: Short description for the card.
+# summary: Optional short description for the card.
 ---
 
-Write the activity article here. Omit link_to to open this article from the card.
+Write a short description here in Markdown. The main image above is displayed automatically.
+
+<!-- Add extra photographs like this (remove the comment markers to display):
+![Additional photograph]({{ "/images/activity/example-2.jpg" | relative_url }})
+-->

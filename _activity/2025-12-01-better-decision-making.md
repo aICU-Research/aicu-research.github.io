@@ -7,3 +7,5 @@ image: /images/activity/sodersjukhuset.png
 source: Sodersjukhuset
 link_to: https://www.sodersjukhuset.se/nyheter/2025/12/battre-beslutsunderlag-for-intensivvarden-med-ai-stod/
 ---
+
+AI-supported decision-making in intensive care, featured by Södersjukhuset.

@@ -1,0 +1,19 @@
+<div class="team-stats"><div><strong>{{ site.data.universities.size }}</strong> Universities</div><div><strong>{{ site.data.team.size }}</strong> People</div><div><strong>{{ site.data.universities | map: "country" | uniq | size }}</strong> Countries</div></div>
+<div class="institution-grid">
+{% for university in site.data.universities %}
+<section class="institution institution-{{ university.id }}">
+  <div class="institution-header"><img src="{{ university.logo | relative_url }}" alt="{{ university.name | escape }} logo"><div><h2>{{ university.name | escape }}</h2><p>{{ university.subtitle | escape }}</p></div></div>
+  <div class="institution-people">
+  {% assign members = site.data.team | where: 'institution', university.id | sort: 'order' %}
+  {% for person in members %}
+  <div class="institution-person">
+    {% if person.url %}<a href="{{ person.url | escape }}">{% endif %}
+    <img src="{{ person.image | relative_url }}" alt="{{ person.name | escape }}" loading="lazy">
+    <div><h3>{{ person.name | escape }}</h3><p>{{ person.role | escape }}</p></div>
+    {% if person.url %}</a>{% endif %}
+  </div>
+  {% endfor %}
+  </div>
+</section>
+{% endfor %}
+</div>

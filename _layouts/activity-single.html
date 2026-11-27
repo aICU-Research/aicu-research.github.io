@@ -7,7 +7,7 @@ layout: base
   <h1>{{ page.title | escape }}</h1>
   <span class="activity-type" style="--type-color:{{ kind.color | default: '#4F0433' }}">{{ kind.label | default: page.type | escape }}</span>
   <p class="meta">{% include activity-date.html item=page %}{% if page.source %} · {{ page.source | escape }}{% endif %}</p>
-  {% if page.image %}<img class="article-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}">{% endif %}
+  {% if page.image %}<img class="article-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">{% endif %}
   {% if page.summary %}<p>{{ page.summary | escape }}</p>{% endif %}
   <div class="article-body">{{ content }}</div>
   {% if page.link_to %}<p><a href="{{ page.link_to | escape }}">Visit original source</a></p>{% endif %}
