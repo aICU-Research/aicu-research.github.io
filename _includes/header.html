@@ -1,5 +1,5 @@
 <header>
-  <a href="{{ '/' | relative_url }}" class="header-logo-link"><img class="header-logo" src="{% if page.url == '/' %}{{ '/images/branding/aicu-dark.svg' | relative_url }}{% else %}{{ '/images/branding/aicu.svg' | relative_url }}{% endif %}" alt="aICU"></a>
+  <a href="{{ '/' | relative_url }}" class="header-logo-link"><img class="header-logo" src="{{ '/images/branding/aicu-dark.svg' | relative_url }}" alt="aICU"></a>
   <nav class="site-nav" aria-label="Main navigation">
     {% for item in site.data.navigation %}
     <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>

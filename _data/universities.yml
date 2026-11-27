@@ -4,33 +4,39 @@
   subtitle: Clinical Science and Education · Sweden
   logo: images/universities/ki.png
   country: Sweden
+  homepage_order: 1
 - id: cambridge
   url: https://www.cst.cam.ac.uk/
   name: University of Cambridge
   subtitle: Department of Computer Science & Technology · United Kingdom
   logo: images/universities/cambridge.png
   country: United Kingdom
+  homepage_order: 2
 - id: edinburgh
   url: https://informatics.ed.ac.uk/
   name: University of Edinburgh
   subtitle: School of Informatics · United Kingdom
   logo: images/universities/edinburgh.png
   country: United Kingdom
+  homepage_order: 4
 - id: eth
   url: https://ai.ethz.ch/
   name: ETH Zürich
   subtitle: ETH AI Center · Switzerland
   logo: images/universities/eth.png
   country: Switzerland
+  homepage_order: 3
 - id: kth
   url: https://www.kth.se/en
   name: KTH Royal Institute of Technology
   subtitle: Stockholm · Sweden
   logo: images/universities/kth.png
   country: Sweden
+  homepage_order: 5
 - id: eindhoven
   url: https://www.tue.nl/en/
   name: Eindhoven University of Technology
   subtitle: Eindhoven · Netherlands
   logo: images/universities/eindhoven.png
   country: Netherlands
+  homepage_order: 6

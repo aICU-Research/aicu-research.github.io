@@ -361,10 +361,10 @@ main .activity-show-all:hover, main .activity-show-all:focus-visible { backgroun
 @media(max-width:520px) { .home-page .institution-overview { grid-template-columns:1fr; } .home-page .team-show-all { grid-column:auto; } }
 
 /* Seamless full-width homepage masthead and hero. */
-.homepage header { background: var(--brand-primary); border-bottom: 0; }
-.homepage .site-nav a { color: white; }
-.homepage .site-nav a:hover, .homepage .site-nav a[aria-current="page"] { color: var(--brand-primary); background: var(--brand-accent); }
-.homepage .site-nav a:focus-visible { outline-color: var(--brand-accent); }
+header { background: var(--brand-primary); border-bottom: 0; }
+.site-nav a { color: white; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--brand-primary); background: var(--brand-accent); }
+.site-nav a:focus-visible { outline-color: var(--brand-accent); }
 .homepage main { max-width: none; margin: 0; padding: 0 0 3rem; }
 .homepage .home-hero { min-height: 420px; }
 .homepage .home-hero-copy { border-top: 0; padding-left: max(1.5rem, calc((100vw - 1218px) / 2)); }
@@ -412,3 +412,21 @@ footer { color: white; text-align: center; font-size: .85rem; }
   .home-hero-copy { padding: 1.5rem; }
   .home-hero h1 { font-size: clamp(1.75rem, 3.4vw, 2.4rem); }
 }
+
+/* Homepage university logos: equal display area, original proportions. */
+.home-page .institution-overview .institution-header { justify-content: flex-start; }
+.home-page .institution-overview .institution-header img {
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  height: 68px;
+  max-height: none;
+  object-fit: contain;
+  object-position: left center;
+}
+.home-page .institution-overview .institution-kth .institution-header img { object-position: left center; }
+
+/* Branded section headings */
+.branded-page-title { display: block; text-align: center; color: var(--brand-primary); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.1; margin: 0 0 1.5rem; }
+.branded-page-title img { display: inline-block; width: auto; height: 1.445em; vertical-align: -.372em; margin-right: .15em; }
+.branded-page-title span { padding: 0; }

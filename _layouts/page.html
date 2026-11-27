@@ -1,5 +1,9 @@
 ---
 layout: base
 ---
+{% if page.branded_title %}
+<h1 class="branded-page-title"><img src="{{ '/images/branding/aicu.svg' | relative_url }}" alt="aICU"> <span>{{ page.title | escape }}</span></h1>
+{% else %}
 <h1>{{ page.title | escape }}</h1>
+{% endif %}
 {{ content }}

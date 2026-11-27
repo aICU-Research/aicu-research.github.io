@@ -1,6 +1,8 @@
 {% unless include.overview %}{% include team-stats.html %}{% endunless %}
 <div class="institution-grid{% if include.overview %} institution-overview{% endif %}">
-{% for university in site.data.universities %}
+{% assign universities = site.data.universities %}
+{% if include.overview %}{% assign universities = universities | sort: "homepage_order" %}{% endif %}
+{% for university in universities %}
 <section class="institution institution-{{ university.id }}">
   {% if include.overview and university.url %}<a class="institution-header institution-link" href="{{ university.url | escape }}">{% else %}<div class="institution-header">{% endif %}<img src="{{ university.logo | relative_url }}" alt="{{ university.name | escape }} logo"><div><h2>{{ university.name | escape }}</h2><p>{{ university.subtitle | escape }}</p></div>{% if include.overview and university.url %}</a>{% else %}</div>{% endif %}
   {% unless include.overview %}
