@@ -339,7 +339,7 @@ main .activity-show-all:hover { background: var(--brand-accent); color: var(--br
 @media(max-width: 520px) { .news-grid-preview { grid-template-columns: minmax(0, 1fr); } }
 
 /* Editorial homepage: hero and spacious sections. */
-.home-hero { display:grid; grid-template-columns: 1.1fr 1fr; background:var(--brand-primary); color:white; min-height:340px; overflow:hidden; }
+.home-hero { display:grid; grid-template-columns: minmax(0, 1fr) minmax(0, clamp(440px, 47.62vw, 52%)); background:var(--brand-primary); color:white; min-height:340px; overflow:hidden; }
 .home-hero-copy { display:flex; flex-direction:column; justify-content:center; padding:clamp(1.5rem,4vw,3.5rem); border-top:5px solid var(--brand-accent); }
 .home-hero h1 { font-size:clamp(2rem,3.8vw,3.3rem); line-height:1.12; text-align:left; letter-spacing:-.035em; }
 .home-hero p { font-size:clamp(1rem,1.5vw,1.2rem); line-height:1.55; margin-top:1.2rem; }
@@ -357,7 +357,7 @@ main .activity-show-all:hover, main .activity-show-all:focus-visible { backgroun
 .home-page .institution-overview .institution-header img { width:auto; max-width:100%; height:38px; }
 .home-page .team-show-all { grid-column:4; grid-row:1 / span 2; min-height:140px; }
 @media(max-width:1000px) { .home-page .institution-overview { grid-template-columns:repeat(2,minmax(0,1fr)); } .home-page .team-show-all { grid-column:1 / -1; grid-row:auto; } }
-@media(max-width:650px) { .home-hero { grid-template-columns:1fr; min-height:0; } .home-hero img { height:auto; aspect-ratio:16/9; } .home-page .home-section { margin-top:2.5rem; } .home-about .team-stats { justify-content:center; } }
+@media(max-width:760px) { .home-hero { grid-template-columns:1fr; min-height:0; } .home-hero img { height:auto; aspect-ratio:16/9; } .home-page .home-section { margin-top:2.5rem; } .home-about .team-stats { justify-content:center; } }
 @media(max-width:520px) { .home-page .institution-overview { grid-template-columns:1fr; } .home-page .team-show-all { grid-column:auto; } }
 
 /* Seamless full-width homepage masthead and hero. */
@@ -370,7 +370,7 @@ main .activity-show-all:hover, main .activity-show-all:focus-visible { backgroun
 .homepage .home-hero-copy { border-top: 0; padding-left: max(1.5rem, calc((100vw - 1218px) / 2)); }
 .homepage .home-section { max-width: 1250px; padding: 0 1rem; margin-left: auto; margin-right: auto; }
 .homepage .page-edit { right: max(1rem, calc((100vw - 1218px) / 2)); }
-@media(max-width:650px) { .homepage .home-hero { min-height: 0; } }
+@media(max-width:760px) { .homepage .home-hero { min-height: 0; } }
 
 /* Simple site footer */
 footer { color: white; text-align: center; font-size: .85rem; }
@@ -403,4 +403,12 @@ footer { color: white; text-align: center; font-size: .85rem; }
 .home-page a.activity-show-all:focus-visible {
   outline: 2px solid var(--brand-primary);
   outline-offset: 2px;
+}
+
+/* Preserve the hero photo at intermediate widths; let the copy shrink first. */
+.home-hero-copy, .home-hero img { min-width: 0; }
+@media (min-width: 761px) and (max-width: 1000px) {
+  .home-hero { grid-template-columns: minmax(0, 1fr) minmax(440px, 50%); }
+  .home-hero-copy { padding: 1.5rem; }
+  .home-hero h1 { font-size: clamp(1.75rem, 3.4vw, 2.4rem); }
 }

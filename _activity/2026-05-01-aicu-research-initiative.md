@@ -3,7 +3,7 @@ title: 'The aICU research initiative: Developing next-generation decision suppor
   tools for intensive care'
 date: '2026-05-01'
 type: news
-image: /images/activity/sodersjukhuset.png
+image: /images/activity/aicu-research-initiative.png
 source: Karolinska Institutet
 ---
 
