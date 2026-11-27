@@ -2,17 +2,27 @@
 layout: base
 title: aICU
 ---
-<section class="about">
-  {% if site.data.about.intro.title %}<h2>{{ site.data.about.intro.title }}</h2>{% endif %}
-  <p>{{ site.data.about.intro.text }}</p>
-  {% include team-stats.html %}
-</section>
-<section>
-  <h2>Latest activity</h2>
-  {% include activity-grid.html limit=site.homepage_activity_limit show_all=true %}
-</section>
-<section><h2>Team</h2>
-  {% include team-institutions.html overview=true %}
-  <p class="center"><a href="{{ '/team/' | relative_url }}">Meet the team</a></p>
-</section>
-<section><h2>Supporters</h2>{% include supporters.html %}</section>
+<div class="home-page">
+  {% assign hero = site.data.about.hero %}
+  <section class="home-hero">
+    <div class="home-hero-copy">
+      <h1>{{ hero.title | escape }}</h1>
+      <p>{{ hero.subtitle | escape }}</p>
+    </div>
+    {% if hero.image %}<img src="{{ hero.image | relative_url }}" alt="{{ hero.image_alt | escape }}" fetchpriority="high">{% endif %}
+  </section>
+  <section class="about home-section home-about">
+    <h2>{{ site.data.about.intro.title }}</h2>
+    <div class="home-about-copy">{{ site.data.about.intro.text | markdownify }}</div>
+    {% include team-stats.html %}
+  </section>
+  <section class="home-section">
+    <h2>Latest activity</h2>
+    {% include activity-grid.html limit=site.homepage_activity_limit show_all=true %}
+  </section>
+  <section class="home-section">
+    <h2>Our team</h2>
+    {% include team-institutions.html overview=true show_all=true %}
+  </section>
+  <section class="home-section"><h2>Supporters</h2>{% include supporters.html %}</section>
+</div>

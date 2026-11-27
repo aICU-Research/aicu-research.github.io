@@ -1,4 +1,13 @@
+hero:
+  title: From data to decisions in intensive care
+  subtitle: Developing AI to support safe, interpretable, and clinically meaningful decision-making in critical care.
+  image: /images/activity/sodersjukhuset.png
+  image_alt: aICU clinical research team
 intro:
-  title: "About Us"
-  text: "aICU is a clinically embedded research initiative focused on developing and evaluating AI for intensive care. Our aim is to create robust, clinically relevant decision-support tools and to study how they can be tested, integrated, and used safely in real-world healthcare settings."
+  title: About Us
+  text: |-
+    Intensive care units treat the sickest patients in the hospital. Clinicians must make complex, high-stakes decisions under time pressure, while much of the information generated in intensive care remains underused.
 
+    The aICU project was initiated at Karolinska Institutet to address these challenges. Today, we bring together clinicians, machine learning researchers and engineers across collaborating universities to develop a standardised pipeline for AI in critical care. Our work spans clinical problem formulation, data infrastructure, model development, safety assessment, clinical integration and evaluation in real-world settings.
+
+    Our aim is not to automate critical care, but to strengthen it by supporting clinicians and building evidence for when and how AI can improve patient care.

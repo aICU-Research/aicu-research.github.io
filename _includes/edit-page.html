@@ -1,8 +1,16 @@
 {% if site.github_edit_base and page.path %}
-{% assign edit_path = page.path %}
+{% assign edit_path = page.edit_path | default: page.path %}
 {% assign first_character = edit_path | slice: 0, 1 %}
 {% if first_character == "/" %}{% assign edit_path = edit_path | remove_first: "/" %}{% endif %}
+{% if page.edit_directory %}
+  {% assign browse_base = site.github_edit_base | replace: '/edit/', '/tree/' %}
+  {% assign edit_url = browse_base | append: page.edit_directory %}
+  {% assign edit_label = 'Browse activity source files on GitHub' %}
+{% else %}
+  {% assign edit_url = site.github_edit_base | append: edit_path %}
+  {% assign edit_label = 'Edit page content on GitHub' %}
+{% endif %}
 <div class="page-edit">
-  <a href="{{ site.github_edit_base }}{{ edit_path | escape }}" title="Edit this page on GitHub" aria-label="Edit this page on GitHub">&#x270E;</a>
+  <a href="{{ edit_url | escape }}" title="{{ edit_label }}" aria-label="{{ edit_label }}">&#x270E;</a>
 </div>
 {% endif %}

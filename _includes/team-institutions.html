@@ -18,4 +18,7 @@
   {% endunless %}
 </section>
 {% endfor %}
+{% if include.show_all %}
+  <a class="card activity-show-all team-show-all" href="{{ '/team/' | relative_url }}"><span>Meet the team <span aria-hidden="true">→</span></span><small>Explore our research team</small></a>
+{% endif %}
 </div>

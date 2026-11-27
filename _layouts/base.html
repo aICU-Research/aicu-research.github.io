@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <title>{% if page.title and page.title != site.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 </head>
-<body>
+<body{% if page.url == "/" %} class="homepage"{% endif %}>
   {% include header.html %}
   <main>
     {{ content }}

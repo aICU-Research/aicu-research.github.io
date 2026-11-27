@@ -143,9 +143,9 @@ Edit `contact.md` to update the contact text, email address and LinkedIn profile
 
 Edit `_data/team.yaml` to add or update a person. Each person's `institution` must match an `id` in `_data/universities.yml`. Their `order` controls their position within that institution on the Team page. Update university names, subtitles and logo paths in `_data/universities.yml`. Logos are stored in `images/universities/`; portraits in `images/people/`. The country count is set in `_includes/team-institutions.html`.
 
-### Homepage team order
+### Homepage
 
-The homepage uses a single grid and displays each member's university from `institution` in `_data/team.yaml`. The optional `homepage_order` field controls homepage priority (default 2); equal values are randomised. The separate Team page uses `order` within each university.
+Edit `hero` and `intro` in `_data/about.yaml` to change the opening headline, subtitle, banner image and About text. The homepage shows university logos rather than individual members, with a Meet the team tile. Team statistics are calculated from the data files. The separate Team page uses `order` within each university.
 
 Supporters without a logo: omit the `image` field to display the supporter name on a white background. The activity type filter is temporarily disabled in `activity.html` using a Liquid comment; remove the comment tags to re-enable it.
 
