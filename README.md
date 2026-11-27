@@ -148,3 +148,10 @@ Edit `_data/team.yaml` to add or update a person. Each person's `institution` mu
 The homepage uses a single grid and displays each member's university from `institution` in `_data/team.yaml`. The optional `homepage_order` field controls homepage priority (default 2); equal values are randomised. The separate Team page uses `order` within each university.
 
 Supporters without a logo: omit the `image` field to display the supporter name on a white background. The activity type filter is temporarily disabled in `activity.html` using a Liquid comment; remove the comment tags to re-enable it.
+
+Homepage institution links are configured using `url` in `_data/universities.yml`. The homepage activity preview uses `homepage_activity_limit` in `_config.yml`, followed by a Show all activity tile.
+
+
+### Brand reference
+
+The unlisted `/brand/` page documents the visual identity and links to logo assets. Edit `brand.md` to update it.

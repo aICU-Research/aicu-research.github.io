@@ -5,11 +5,11 @@ title: aICU
 <section class="about">
   {% if site.data.about.intro.title %}<h2>{{ site.data.about.intro.title }}</h2>{% endif %}
   <p>{{ site.data.about.intro.text }}</p>
+  {% include team-stats.html %}
 </section>
 <section>
   <h2>Latest activity</h2>
-  {% include activity-grid.html limit=site.homepage_activity_limit %}
-  <p class="center"><a href="{{ '/activity/' | relative_url }}">View all activity</a></p>
+  {% include activity-grid.html limit=site.homepage_activity_limit show_all=true %}
 </section>
 <section><h2>Team</h2>
   {% include team-institutions.html overview=true %}

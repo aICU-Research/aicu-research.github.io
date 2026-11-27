@@ -1,8 +1,11 @@
 {% assign activities = site.activity | sort: 'date' | reverse %}
-<div class="news-grid" {% if include.archive %}id="activity-grid"{% endif %}>
+<div class="news-grid{% if include.show_all %} news-grid-preview{% endif %}" {% if include.archive %}id="activity-grid"{% endif %}>
   {% if include.limit %}
     {% for activity in activities limit:include.limit %}{% include activity-card.html item=activity %}{% endfor %}
   {% else %}
     {% for activity in activities %}{% include activity-card.html item=activity %}{% endfor %}
+  {% endif %}
+  {% if include.show_all %}
+  <a class="card activity-show-all" href="{{ '/activity/' | relative_url }}"><span>Show all activity <span aria-hidden="true">→</span></span><small>News, events and milestones</small></a>
   {% endif %}
 </div>

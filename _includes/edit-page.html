@@ -1,5 +1,8 @@
 {% if site.github_edit_base and page.path %}
+{% assign edit_path = page.path %}
+{% assign first_character = edit_path | slice: 0, 1 %}
+{% if first_character == "/" %}{% assign edit_path = edit_path | remove_first: "/" %}{% endif %}
 <div class="page-edit">
-  <a href="{{ site.github_edit_base }}{{ page.path | remove_first: '/' | escape }}" title="Edit this page on GitHub" aria-label="Edit this page on GitHub">&#x270E;</a>
+  <a href="{{ site.github_edit_base }}{{ edit_path | escape }}" title="Edit this page on GitHub" aria-label="Edit this page on GitHub">&#x270E;</a>
 </div>
 {% endif %}
