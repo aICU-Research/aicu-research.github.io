@@ -135,10 +135,9 @@ Uploading an image alone is not sufficient. Its path must also be referenced in 
 Logo variants are available in `images/branding/`.
 Credit to Akshaya for the original design
 
-## TODO
+## Contact
 
-- Add a Contact Us / Get in Touch section.
-- Remove year filtering
+Edit `contact.md` to update the contact text, email address and LinkedIn profile. The page is linked from the main navigation.
 
 ### University-grouped team page
 

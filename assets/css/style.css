@@ -321,3 +321,7 @@ main { position: relative; padding-bottom: 3rem; }
 
 /* Text fallback for supporters without a logo. */
 .supporter-placeholder { display: grid; place-items: center; width: 100%; height: 100%; background: white; color: black; text-align: center; font-size: .8rem; font-weight: 600; line-height: 1.25; overflow-wrap: anywhere; }
+
+/* Contact page */
+.contact-content { max-width: 44rem; margin: 1.5rem auto; text-align: center; line-height: 1.6; overflow-wrap: anywhere; }
+.contact-content p + p { margin-top: 1rem; }
