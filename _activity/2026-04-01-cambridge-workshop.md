@@ -1,7 +1,7 @@
 ---
 title: Workshop in Cambridge
-date: '2025-05-05'
-date_label: May 2025
+date: '2026-04-01'
+date_label: April 2026
 type: event
 image: /images/activity/cambridge-workshop-2025.png
 ---
