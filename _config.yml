@@ -23,3 +23,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .idea
+
+github_edit_base: https://github.com/aICU-Research/aicu-research.github.io/edit/main/

@@ -1,8 +1,9 @@
 <div class="team-stats"><div><strong>{{ site.data.universities.size }}</strong> Universities</div><div><strong>{{ site.data.team.size }}</strong> People</div><div><strong>{{ site.data.universities | map: "country" | uniq | size }}</strong> Countries</div></div>
-<div class="institution-grid">
+<div class="institution-grid{% if include.overview %} institution-overview{% endif %}">
 {% for university in site.data.universities %}
 <section class="institution institution-{{ university.id }}">
   <div class="institution-header"><img src="{{ university.logo | relative_url }}" alt="{{ university.name | escape }} logo"><div><h2>{{ university.name | escape }}</h2><p>{{ university.subtitle | escape }}</p></div></div>
+  {% unless include.overview %}
   <div class="institution-people">
   {% assign members = site.data.team | where: 'institution', university.id | sort: 'order' %}
   {% for person in members %}
@@ -14,6 +15,7 @@
   </div>
   {% endfor %}
   </div>
+  {% endunless %}
 </section>
 {% endfor %}
 </div>

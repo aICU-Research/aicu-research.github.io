@@ -291,3 +291,33 @@ header { background: white; border-bottom: 2px solid var(--brand-primary); }
 /* Team overview statistics */
 .team-stats { justify-content:center; gap:clamp(1rem,5vw,4rem); text-align:center; margin:1.5rem 0; }
 .team-stats strong { font-size:2.2rem; margin-bottom:.3rem; }
+
+/* Page editing shortcuts */
+main { position: relative; padding-bottom: 3rem; }
+.article-back, .activity-back { text-decoration: none; }
+.page-edit { position: absolute; right: 1rem; bottom: .5rem; text-align: right; }
+.page-edit a { display: inline-block; color: var(--brand-primary); text-decoration: none; font-size: 1.1rem; padding: .25rem .4rem; }
+.page-edit a:hover { background: var(--brand-accent); border-radius: 4px; }
+.page-edit a:focus-visible { outline: 2px solid var(--brand-primary); outline-offset: 2px; }
+
+/* Uniform member-card widths across all university groups */
+.institution-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.institution-grid .institution-people { grid-template-columns: repeat(auto-fill, minmax(0, 160px)); justify-content: center; }
+@media (max-width: 1050px) { .institution-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 650px) { .institution-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 360px) { .institution-grid .institution-people { grid-template-columns: minmax(0, 160px); } }
+
+/* Compact university overview on the homepage */
+.institution-overview .institution { grid-column: auto; grid-row: auto; }
+.institution-overview .institution-header { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+
+/* Compact homepage supporters: eight cards per desktop row. */
+#supporters-grid { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: .65rem; }
+#supporters-grid .card-small { width: 100%; min-width: 0; }
+#supporters-grid .img-box { aspect-ratio: 4 / 3; padding: .45rem; }
+#supporters-grid h3 { overflow-wrap: anywhere; }
+@media (max-width: 900px) { #supporters-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 480px) { #supporters-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Text fallback for supporters without a logo. */
+.supporter-placeholder { display: grid; place-items: center; width: 100%; height: 100%; background: white; color: black; text-align: center; font-size: .8rem; font-weight: 600; line-height: 1.25; overflow-wrap: anywhere; }

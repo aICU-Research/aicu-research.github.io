@@ -5,7 +5,11 @@
     <a href="{{ supporter.url }}" target="_blank" rel="noopener noreferrer">
     {% endif %}
       <div class="img-box">
-        <img src="{{ supporter.image | relative_url }}" alt="{{ supporter.name }}">
+        {% if supporter.image and supporter.image != empty %}
+          <img src="{{ supporter.image | relative_url }}" alt="{{ supporter.name | escape }}">
+        {% else %}
+          <div class="supporter-placeholder">{{ supporter.name | escape }}</div>
+        {% endif %}
       </div>
       <div class="card-content">
         <h3>{{ supporter.name }}</h3>

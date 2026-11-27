@@ -54,7 +54,7 @@ For example:
 ---
 title: Workshop in Cambridge
 date: 2026-11-25
-end_date: 2026-11-27
+date_label: 25-27 November 2026
 type: event
 image: /images/activity/cambridge-workshop-2026.jpg
 summary: Short description of the workshop.
@@ -68,13 +68,10 @@ Optional properties:
 - `image`: Path to the activity photograph.
 - `image_alt`: Alternative text describing the photograph.
 - `source`: Name of the original source or organisation.
-- `link_to`: External source link displayed at the end of the activity page.
 - `summary`: Short description displayed on the card.
-- `end_date`: End date for multi-day activities.
 - `date_label`: Custom displayed date, e.g. "Early 2025 (TBD)".
-- `date_precision`: Set to `month` or `year` for approximate dates.
 
-Activities are automatically sorted by date, newest first. Every card opens its local activity page. The optional `link_to` provides a link to the original source there.
+Activities are automatically sorted by date, newest first. Every card opens its local activity page. Dates display as month and year unless `date_label` is provided. Add external links directly to the Markdown body, e.g. `[Original source](https://example.com)`.
 
 ### Writing activity content and adding photographs
 
@@ -87,6 +84,10 @@ To add a second or third photograph, upload it to `images/activity/` and insert 
 ```
 
 You can also use a plain root-relative path, e.g. `![Workshop photograph](/images/activity/example.jpg)`. No layout changes are needed.
+
+### Editing on GitHub
+
+The small purple pen at the bottom right of every page opens its source file in the GitHub editor. The repository and branch are configured in `_config.yml` via `github_edit_base`. Editing requires GitHub access. On the homepage, the pen opens `index.html`; team and activity data remain in their respective files.
 
 ### Activity categories
 
@@ -146,3 +147,5 @@ Edit `_data/team.yaml` to add or update a person. Each person's `institution` mu
 ### Homepage team order
 
 The homepage uses a single grid and displays each member's university from `institution` in `_data/team.yaml`. The optional `homepage_order` field controls homepage priority (default 2); equal values are randomised. The separate Team page uses `order` within each university.
+
+Supporters without a logo: omit the `image` field to display the supporter name on a white background. The activity type filter is temporarily disabled in `activity.html` using a Liquid comment; remove the comment tags to re-enable it.

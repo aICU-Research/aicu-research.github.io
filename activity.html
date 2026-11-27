@@ -3,9 +3,10 @@ layout: page
 title: Activity
 permalink: /activity/
 ---
+{% comment %}
 <div class="archive-filters" id="activity-filters" hidden>
   <label>Type <select id="activity-type"><option value="">All types</option>{% for kind in site.data.activity_types %}<option value="{{ kind[0] | escape }}">{{ kind[1].label | escape }}</option>{% endfor %}</select></label>
-  <label>Year <select id="activity-year"><option value="">All years</option></select></label>
 </div>
+{% endcomment %}
 {% include activity-grid.html archive=true %}
 <p class="center" id="activity-empty" hidden>No matching activities.</p>

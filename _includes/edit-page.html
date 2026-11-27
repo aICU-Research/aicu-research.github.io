@@ -1,0 +1,5 @@
+{% if site.github_edit_base and page.path %}
+<div class="page-edit">
+  <a href="{{ site.github_edit_base }}{{ page.path | remove_first: '/' | escape }}" title="Edit this page on GitHub" aria-label="Edit this page on GitHub">&#x270E;</a>
+</div>
+{% endif %}

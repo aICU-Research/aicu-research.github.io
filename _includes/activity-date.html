@@ -1,1 +1,1 @@
-<time datetime="{{ include.item.date | date: '%Y-%m-%d' }}">{% if include.item.date_label %}{{ include.item.date_label | escape }}{% elsif include.item.date_precision == 'month' %}{{ include.item.date | date: '%B %Y' }}{% elsif include.item.date_precision == 'year' %}{{ include.item.date | date: '%Y' }}{% else %}{{ include.item.date | date: '%-d %B %Y' }}{% endif %}</time>
+<time datetime="{{ include.item.date | date: '%Y-%m-%d' }}">{% if include.item.date_label %}{{ include.item.date_label | escape }}{% else %}{{ include.item.date | date: '%B %Y' }}{% endif %}</time>

@@ -93,14 +93,14 @@
 - name: Radzim Sendyka
   role: PhD student
   image: images/people/radzim.jpg
-  url: https://ki.se/en/people/radzim-sendyka
+  url: https://www.cst.cam.ac.uk/people/rs2071
   order: 1
   institution: cambridge
   homepage_order: 3
 - name: Christian Cabrera Jojoa
   role: Associate professor
   image: images/people/christian.jpg
-  url: https://ki.se/en/people/christian-cabrerajojoa
+  url: https://www.cst.cam.ac.uk/people/chc79
   order: 2
   institution: cambridge
   homepage_order: 3
@@ -113,7 +113,7 @@
 - name: Carl Henrik Ek
   role: Professor
   image: images/people/carl-henrik-ek.jpg
-  url: https://ki.se/en/people/carl-henrik-ek
+  url: https://carlhenrik.com/
   order: 4
   institution: cambridge
   homepage_order: 9
@@ -177,7 +177,7 @@
   image: images/people/ellen-loman.jpg
   institution: eindhoven
   order: 1
-  homepage_order: 3
+  homepage_order: 8
 - name: Federica Eduati
   role: Associate professor (main master's supervisor)
   image: images/people/federica-eduati.jpg
